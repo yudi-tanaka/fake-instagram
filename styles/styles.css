@@ -1,0 +1,166 @@
+:root {
+  --cor-fundo: #ffffff;
+  --cor-borda: #dbdbdb;
+  --cor-fonte-preto: #262626;
+  --cor-fonte-cinza: #8e8e8e;
+  --cor-fonte-azul: #139ef2;
+  --fonte: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--fonte);
+  color: var(--cor-fonte-preto);
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 45px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--cor-fundo);
+  font-size: 22px;
+}
+
+/* CABECALHO */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid var(--cor-borda);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--cor-fundo);
+}
+
+.cabecalho ion-icon {
+  width: 22px;
+  height: 22px;
+  align-self: center;
+}
+
+.cabecalho-img img {
+  width: 103px;
+  height: 29px;
+  grid-column: 3/4;
+}
+
+/* CARROSSEL */
+
+.carrossel {
+  margin-top: 88px;
+  margin-bottom: 24px;
+  border: 1px solid var(--cor-borda);
+}
+
+.carrossel-lista {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow: scroll;
+  padding: 10px 1px;
+}
+
+.carrossel-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+.carrossel-itens img {
+  width: 56px;
+  height: 56px;
+}
+
+.carrossel-itens p {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* FEED */
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.feed-post {
+  border: 1px solid var(--cor-borda);
+  margin-bottom: 60px;
+}
+.post-cabecalho {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  padding: 15px;
+  column-gap: 10px;
+}
+
+.post-cabecalho img {
+  width: 32px;
+  height: 32px;
+  align-self: center;
+}
+
+.post-cabecalho h2 {
+  font-size: 14px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.post-cabecalho ion-icon {
+  font-size: 20px;
+  grid-column: 4/5;
+  align-self: center;
+}
+
+.post-img {
+  width: 100%;
+}
+.post-icones {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.post-icones ion-icon {
+  font-size: 20px;
+}
+
+.post-icones div {
+  display: flex;
+  gap: 10px;
+}
+
+.post-curtidas {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.post-curtidas b {
+  font-weight: 500;
+}
+
+/* DISPLAY NONE */
+
+.cabecalho2 {
+  display: none;
+}
+
+.sideBar {
+  display: none;
+}
